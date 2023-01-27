@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buscador múltiples campos</title>
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">  
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/app.css">
+    
+</head>
+<body>
+
+    <h1>Buscador de Peliculas</h1>
+
+    <div class="contenedor">
+
+        
+
+        <form id="buscador">
+            <div class="row">
+                <div class="three columns">
+                    <label for="genero">Genero</label>
+                    <select class="u-full-width" id="genero">
+                        <option value="">Seleccione</option>
+                        <option value="Terror">Terror</option>
+                        <option value="Suspenso">Suspenso</option>
+                        <option value="Accion">Accion</option>
+                        <option value="Aventura">Aventura</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Romance">Romance</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="year">Año</label>
+                    <select class="u-full-width" id="year">
+                        <option value="">Seleccione</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="minimo">Precio Min</label>
+                    <select class="u-full-width" id="minimo">
+                            <option value="">Seleccione</option>
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="maximo">Precio Max</label>
+                    <select class="u-full-width" id="maximo">
+                            <option value="">Seleccione</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                            <option value="35">35</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="four columns">
+                        <label for="duracion">Duracion</label>
+                        <select class="u-full-width" id="duracion">
+                                <option value="">Seleccione</option>
+                                <option value="1">mas de una hora</option>
+                                <option value="2">mas de dos horas</option>
+                        </select>
+                    </div>
+                    <div class="four columns">
+                        <label for="galardonada">Galardonada</label>
+                        <select class="u-full-width" id="galardonada">
+                                <option value="">Seleccione</option>
+                                <option value="SI">Si</option>
+                                <option value="NO">No</option>
+                        </select>
+                    </div>
+                    
+                </div>
+            </div>
+        </form>
+
+
+        <h1>Resultados</h1>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="js/db.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
